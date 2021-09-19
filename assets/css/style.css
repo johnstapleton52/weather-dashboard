@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #E5E5E5;
+}
+
+/* general formatting */
+
+.text-formatting {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+/* Layout */
+.left-section {
+    width: 30%;
+}
+
+.right-content {
+    flex:1;
+}
+
+/* Title formatting */
+
+#title {
+    display: ;
+    color: white;
+    background: linear-gradient(.25turn, #b3f0ff, #0000b3);
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+}
+
+/* Popular searches section */
+
+.city-recs {
+    flex-direction: column;
+    width: 20%;
+}
+
+
+/* button styling */
+.city-recs button {
+    text-align: center;
+    border-style: none;
+    background: #939393;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+} 
+
+
+/* Report display formatting */
+
+.report-display {
+    border-style: solid;
+    border-color: #303030;
+    border-width: 2px;
+}
+
+
