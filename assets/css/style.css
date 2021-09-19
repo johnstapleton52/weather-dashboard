@@ -1,5 +1,5 @@
 * {
-    padding: 0;
+    padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     background: #E5E5E5;
 }
@@ -60,7 +60,24 @@
 .report-display {
     border-style: solid;
     border-color: #303030;
-    border-width: 2px;
+    border-width: 1px;
 }
 
+
+/* Forecast styling */
+.forecast {
+    justify-content: space-between;
+}
+
+.forecast-day {
+    padding-right: 15px;
+    background: linear-gradient(.4turn, #617AE5, #162563);
+    width: 180px;
+}
+
+.forecast div p {
+    color: white;
+    background: transparent;
+    font-size: 18px;
+}
 
