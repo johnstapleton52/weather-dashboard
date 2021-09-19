@@ -2,6 +2,7 @@
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     background: #E5E5E5;
+    margin: 0;
 }
 
 /* general formatting */
@@ -18,42 +19,90 @@
 /* Layout */
 .left-section {
     width: 30%;
+    margin: 10px;
 }
 
 .right-content {
     flex:1;
+    margin: 10px;
 }
 
 /* Title formatting */
 
 #title {
-    display: ;
     color: white;
     background: linear-gradient(.25turn, #b3f0ff, #0000b3);
+    font-weight: bold;
+    width: 100%;
+    padding: 20px;
+}
+
+.title-container {
     width: 100%;
     height: 100%;
-    font-weight: bold;
+}
+
+/* search bar formatting */
+#inputValue {
+    width: 90%;
+    border: none;
+    background: white;
+    font-size: 32px;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+#search {
+    color: white;
+    width: 94%;
+    border: none;
+    background: #162563;
+    padding: 6px;
+    margin: 11px 2px 0 0;
+    border-radius: 10px;
+}
+
+#search:hover {
+    background: #617AE5;
+}
+
+.search-input {
+    padding: 5px;
+}
+
+.search-input h2 {
+    margin: 10px;
 }
 
 /* Popular searches section */
 
 .city-recs {
     flex-direction: column;
-    width: 20%;
+    width: 90%;
 }
 
+.city-recs > h3 {
+    padding: 5px;
+    border-bottom: 2px solid #162563;
+}
 
 /* button styling */
 .city-recs button {
     text-align: center;
     border-style: none;
     background: #939393;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 5px;
     padding: 5px;
     margin: 10px;
+    width: 100%;
 } 
 
+.city-recs button:hover {
+    background: #C1C1C1;
+    border: 1px solid #939393;
+    margin: 9px;
+}
 
 /* Report display formatting */
 
@@ -61,7 +110,16 @@
     border-style: solid;
     border-color: #303030;
     border-width: 1px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 25px 18px 8px 5px;
 }
+
+.weatherData {
+    margin: 12px;
+}
+
+
 
 
 /* Forecast styling */
@@ -69,10 +127,22 @@
     justify-content: space-between;
 }
 
+#forecast-header {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 8px;
+}
+
 .forecast-day {
-    padding-right: 15px;
+    padding: 4px 10px 3px 20px;
+    margin: 8px;
     background: linear-gradient(.4turn, #617AE5, #162563);
     width: 180px;
+    border-radius: 10px;
+}
+
+.forecast-day p {
+    margin: 10px 10px 10px 3px;
 }
 
 .forecast div p {
@@ -81,3 +151,9 @@
     font-size: 18px;
 }
 
+.forecast-date {
+    font-weight: bold;
+    height: 10px;
+    margin: 12px;
+    padding-bottom: 8px;
+}

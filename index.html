@@ -9,7 +9,7 @@
 </head>
 <body>
  <!-- Page Title -->
-    <div>
+    <div class="title-container">
         <h1 id="title" class="text-formatting">Weather Dashboard</h1>
     </div>
     <div class="flex">
@@ -21,7 +21,7 @@
                 <input type="submit" value="Search" id="search">
 
             </div>
-
+            <!-- Popular city recs -->
             <div class="city-recs">
                 <h3>Popular Searches:</h3>
                 <button>Austin</button>
@@ -44,12 +44,13 @@
                 <h3 id="wind" class="weatherData">Windspeed:</h3>
                 <h3 id="humidity" class="weatherData">Humidity:</h3>
                 <h3 id="uvIndex" class="weatherData"></h3>
-            
+                <img id="weather-icon"></img>
             </div>
+            
 
-            <!-- Five Day Forecast -->
-            <div class="">
-                <div>5-Day Forecast:</div>
+            <!-- Five Day Forecast display -->
+            <div>
+                <div id="forecast-header">5-Day Forecast:</div>
                 <div class="forecast flex">
                     <div class="forecast-day day-one">
                         <p class="forecast-date" id="dateOne"></p>
@@ -87,11 +88,11 @@
 
                     </div>
                 </div>
-
-            <!-- Each Day Displayed Here -->
+            </div>
+            
         </div>
     </div>
-        </div>
-        <script src="./assets/js/main.js"></script>
+  
+<script src="./assets/js/main.js"></script>
 </body>
 </html>
