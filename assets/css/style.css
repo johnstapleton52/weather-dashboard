@@ -18,7 +18,7 @@
 
 /* Layout */
 .left-section {
-    width: 30%;
+    width: 20%;
     margin: 10px;
 }
 
@@ -125,6 +125,7 @@
 /* Forecast styling */
 .forecast {
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #forecast-header {
@@ -134,11 +135,11 @@
 }
 
 .forecast-day {
-    padding: 4px 10px 3px 20px;
-    margin: 8px;
+    padding: 4px 10px 3px 10px;
+    margin: 4px;
     background: linear-gradient(.4turn, #617AE5, #162563);
     width: 180px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .forecast-day p {
@@ -148,7 +149,8 @@
 .forecast div p {
     color: white;
     background: transparent;
-    font-size: 18px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .forecast-date {

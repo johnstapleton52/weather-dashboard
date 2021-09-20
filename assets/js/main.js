@@ -111,8 +111,9 @@ var weatherForecast = function() {
 
 
     // Api request for weather report and forecast
-search.addEventListener('click', function() {
-   
+search.addEventListener('click', sendApi = function() {
+   clearPrev();
+   var cityName = document.querySelector('#inputValue');
     // format the api request for report
  var apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName.value + "&units=imperial&appid=bd16c590f9c0534397d2b37e472d5d56";
 
@@ -133,6 +134,7 @@ search.addEventListener('click', function() {
         var windSpeed = "  " + data['wind']['speed'] +"mph";
         var humidityVal = "  " + data['main']['humidity'] +"%";
         
+
    
         // display data in respective divs
         namename.innerHTML += nameValue;
@@ -141,7 +143,7 @@ search.addEventListener('click', function() {
         wind.innerHTML += windSpeed;
         humidity.innerHTML += humidityVal;
     })
-    
+
     
 
 // alert user if the city is not found
@@ -153,7 +155,44 @@ search.addEventListener('click', function() {
 weatherForecast();
 
 });
+
+
+
    
 
+ // clear previous searches 
 
+var clearPrev = function() {
+    namename.innerHTML = "City:";
+    temperature.innerHTML = "Temperature:";
+    wind.innerHTML = "Windspeed:";
+    humidity.innerHTML = "Humidity:";
+
+      // day one clear
+      dateOne.innerHTML = "";
+      tempOne.innerHTML = "Temp:";
+      windOne.innerHTML = "Wind:";
+      humidityOne.innerHTML = "Humidity:";
+      // day two clear
+      dateTwo.innerHTML = "";
+      tempTwo.innerHTML = "Temp:";
+      windTwo.innerHTML = "Wind:";
+      humidityTwo.innerHTML = "Humidity:";
+      // day three clear
+      dateThree.innerHTML = "";
+      tempThree.innerHTML = "Temp:";
+      windThree.innerHTML = "Wind:";
+      humidityThree.innerHTML = "Humidity:";
+      // day four clear
+      dateFour.innerHTML = "";
+      tempFour.innerHTML = "Temp:";
+      windFour.innerHTML = "Wind:";
+      humidityFour.innerHTML = "Humidity:";
+      // day five clear
+      dateFive.innerHTML = "";
+      tempFive.innerHTML = "Temp:";
+      windFive.innerHTML = "Wind:";
+      humidityFive.innerHTML = "Humidity:";
+};
+    
 
